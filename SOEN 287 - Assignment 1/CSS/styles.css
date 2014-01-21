@@ -36,6 +36,7 @@ body{
 
 #wrapper{
 	width: 960px;
+	height: 829px;
 	background: #9c9c9c;
 	margin: 0 auto;
 	padding: 0;
@@ -48,7 +49,7 @@ nav ul{
 	background: #9c9c9c;
 	width:758px;
 	height:28px;
-	border: 1px solid yellow;
+	border: 1px solid #1d1a1a;
 	padding: 0;
 	margin:0;
 }
@@ -73,7 +74,7 @@ nav ul li a:hover{
 
 #mainContainer{
 	text-align: left;
-	width: 750px;
+	width: 749px;
 	height: 350px;
 	background: #9c9c9c;
 	font: 22px Helvetica;
@@ -82,23 +83,46 @@ nav ul li a:hover{
 	margin: 0;
 }
 
+#mainContainer article h1{
+	font: bold 25px Helvetica;
+}
+
+
 #rightContainer{
-	width: 198px;
-	height: 389px;
+	width: 201px;
+	height: 589px;
 	text-align: center;
-	border: 1px solid yellow;
 	font: normal 18px Helvetica;
-	
+	background:#1d1a1a;
+	color: red;	
 	padding: 5px 0;
 	margin: 0;
 	
 }
 
 #rightContainer h1{
-	font: bold 22px Helvetica;
+	font: bold 25px Helvetica;
 }
 
-aside h1 dl dt a: hover{
+#rightContainer aside dl dt{
+	padding: 10px 0;
+}
+
+
+#rightContainer aside dl dt a{
+	text-decoration: none;
+	color: red;
+}
+
+#rightContainer aside dl dt a:hover{
 	color: red;
 	text-decoration: underline;	
+}
+
+table{
+	width: 75%;
+	height: 100%;
+	margin-left: 95px;
+	margin-right: 95px;
+	margin-top: 75px;
 }

@@ -36,9 +36,9 @@ body{
 
 #wrapper{
 	width: 960px;
-	height: 829px;
+	height: 785px;
 	background: #9c9c9c;
-	margin: 0 auto;
+	margin: auto auto;
 	padding: 0;
 }
 
@@ -73,48 +73,53 @@ nav ul li a:hover{
 }
 
 #mainContainer{
+	marhin: 0;
+	padding: 0;
+}
+
+#mainScreen{
 	text-align: left;
 	width: 749px;
-	height: 350px;
+	height: 539px;
 	background: #9c9c9c;
 	font: 22px Helvetica;
 	
-	padding: 5px 5px;
+	padding: 0;
 	margin: 0;
 }
 
-#mainContainer article h1{
+#mainScreen article h1{
 	font: bold 25px Helvetica;
 }
 
 
-#rightContainer{
+#quickLinks{
 	width: 201px;
-	height: 589px;
+	height: 539px;
 	text-align: center;
 	font: normal 18px Helvetica;
 	background:#1d1a1a;
 	color: red;	
-	padding: 5px 0;
+	padding:0;
 	margin: 0;
 	
 }
 
-#rightContainer h1{
+#quickLinks h1{
 	font: bold 25px Helvetica;
 }
 
-#rightContainer aside dl dt{
+#quickLinks aside dl dt{
 	padding: 10px 0;
 }
 
 
-#rightContainer aside dl dt a{
+#quickLinks aside dl dt a{
 	text-decoration: none;
 	color: red;
 }
 
-#rightContainer aside dl dt a:hover{
+#quickLinks aside dl dt a:hover{
 	color: red;
 	text-decoration: underline;	
 }
@@ -122,7 +127,35 @@ nav ul li a:hover{
 table{
 	width: 75%;
 	height: 100%;
-	margin-left: 95px;
-	margin-right: 95px;
-	margin-top: 75px;
+	margin:0 95px;
+}
+
+footer{
+	text-align: center;
+	font-family: Arial;
+	color: #fff;
+	background: #000;
+	padding: 5px 0;
+	margin: 0;
+	border: 1px solid #fff;
+	align: top;
+	
+}
+footer p{
+	margin: 2px 5px;
+	white-space:pr-wrap;
+}
+
+footer ul{
+	
+	height:25px;
+	padding:0;
+	margin:0;
+}
+
+footer ul li{
+	display: inline-block;
+	padding: 0 20px;
+	margin:2px
+	
 }

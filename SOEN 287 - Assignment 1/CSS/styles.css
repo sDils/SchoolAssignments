@@ -3,6 +3,8 @@ html, body{
 	padding: 0;
 	margin: 0;
 	width: 100%;
+	height: 100%;
+	background-color: #c5c5c5;
 }
 
 article,aside,details,figcaption,figure,
@@ -30,14 +32,11 @@ footer,header,hgroup,menu,nav,section {
 .clearfix {
     display: inline-block;
 }
-body{
-	background: black;
-}
 
 #wrapper{
 	width: 960px;
 	height: 785px;
-	background: #9c9c9c;
+	background: blue;
 	margin: auto auto;
 	padding: 0;
 }
@@ -46,10 +45,10 @@ body{
 
 nav ul{
 	
-	background: #9c9c9c;
-	width:758px;
-	height:28px;
-	border: 1px solid #1d1a1a;
+	background: #dbdbdb;
+	width:756px;
+	height:26px;
+	border: 2px solid #1d1a1a;
 	padding: 0;
 	margin:0;
 }
@@ -57,7 +56,9 @@ nav ul{
 nav ul li{
 	display:inline-block;
 	padding: 0 20px;
-	font: bold 22.5px Helvetica ;
+	font-size: 14pt ;
+	font-family: Tahoma;
+	font-weight: bold;
 }
 
 nav ul li a{
@@ -68,8 +69,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	color: red;
-	text-decoration: underline;	
+	color: black;
+	text-decoration: underline; 	
+	
 }
 
 #mainContainer{
@@ -79,14 +81,58 @@ nav ul li a:hover{
 
 #mainScreen{
 	text-align: left;
-	width: 749px;
+	width: 758px;
 	height: 539px;
-	background: #9c9c9c;
+	background: #dbdbdb;
 	font: 22px Helvetica;
+	border-left: 2px solid #1d1a1a;
 	
 	padding: 0;
 	margin: 0;
 }
+
+.Table{
+	
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    
+   
+}
+
+
+.Row{
+	
+    display: table-row;
+    
+  
+    
+    
+}
+#even{
+	background-color:red;
+	
+}
+#odd{
+	background-color: black;
+	
+}
+.Cell{
+	
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    border-color:yellow;
+    
+    width:60px;
+    height:60px;
+   
+}
+
+
 
 #mainScreen article h1{
 	font: bold 25px Helvetica;
@@ -94,11 +140,15 @@ nav ul li a:hover{
 
 
 #quickLinks{
-	width: 201px;
+	width: 198px;
 	height: 539px;
+	border-left: 2px solid #1d1a1a;
+	
+	border-top: 2px solid #1d1a1a;
+	border-bottom: 2px solid #1d1a1a;
 	text-align: center;
 	font: normal 18px Helvetica;
-	background:#1d1a1a;
+	background:#dbdbdb;
 	color: red;	
 	padding:0;
 	margin: 0;
@@ -137,7 +187,7 @@ footer{
 	background: #000;
 	padding: 5px 0;
 	margin: 0;
-	border: 1px solid #fff;
+	outline: 1px solid #fff;
 	align: top;
 	
 }

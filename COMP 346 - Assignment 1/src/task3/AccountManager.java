@@ -1,3 +1,4 @@
+package task3;
 /**
  * Class AccountManager
  * Implements account manager that twists depositor and withdrawal threads.
@@ -102,6 +103,9 @@ public class AccountManager {
 		// Get elapsed time in days 
 		float elapsedTimeDay = elapsedTimeMillis/(24*60*60*1000F); 
 		*/
+		
+		System.out.println("TASK 3");
+		
 	}
 
 }

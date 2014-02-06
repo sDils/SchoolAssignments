@@ -12,11 +12,15 @@
 
 	<div id = "wrapper">
 		<header>
-			<img class="left" border="0" src="images/logo.jpg" alt="King Me" height="230" width="200">
-			<img class="left" border="0" src="images/logotxt.jpg" alt="King Me" height="200" width="760">
+		
+			<div style = "position:relative;">
+				<div id="name" style="position: absolute;">Checkers</div>
+				<img id="logo" class="left" border="0" src="images/logo.jpg" alt="King Me" height="230" width="200">
+				
+			</div>	 
 			
 		</header>
-		<div id="navBar">
+	<div id="navBar">
 			
 			<nav>
 				<ul class="right">
@@ -27,7 +31,6 @@
 			</nav>
 		</div>
 		
-		<div class="container clearfix">
 			<section id="mainScreen" class="right">
 				<article>
 					<h1>Regular Pieces</h1>
@@ -48,12 +51,11 @@
 			
 			<section id="quickLinks" class="left">
 				<aside>
-					<h1>Quick Links</h1>
-						<dl>
-							<dt><a href="index.html" title="Play Game">Play Game</a></dt>
-							<dt>View Profile</dt>
-							<dt>Create Profile</dt>
-						</dl>
+					<dl>
+						<dt><a href="index.html" title="Play Game">Play Game</a></dt>
+						<dt><a href=# title="Profiles">View Profile</a></dt>
+						<dt><a href=# title="Create Profile">Create Profile</a></dt>
+					</dl>
 				</aside>
 			</section>
 			
@@ -71,7 +73,46 @@
 		</footer>
 		</div>
 		
-	</div>
+
+	
+	<script type="text/javascript">
+	function renderTime(){
+		var currentTime = new Date();
+		var diem = "AM"
+		var h = currentTime.getHours();
+		var m = currentTime.getMinutes();
+		var s = currentTime.getSeconds();
+		
+		if(h == 0){
+			h=12;
+		}
+		else if(h>12){
+			h=h-12;
+			diem="PM";
+		}
+		
+		
+		if(h<10){
+			h = "0"+ h;
+		}
+		
+		if(m<10){
+			m = "0"+m;
+		}
+		
+		if(s<10){
+			s = "0"+s;
+		}
+		
+		var myClock = document.getElementById("clockDisplay");
+		myClock.textContent = h+":"+m+":"+s+" "+diem;
+		
+		setTimeout('renderTime()', 1000);
+	}
+	
+renderTime();
+</script>
+	
 
 </body>
 </html>

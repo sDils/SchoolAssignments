@@ -1,3 +1,4 @@
+package task4;
 
 /**
  * Class Depositor
@@ -21,8 +22,8 @@ public class Depositor extends Thread {
 		{
 			
 			account.debosit(10);
-		/*			
- 		try {
+					
+ 		/*try {
 				sleep(10);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

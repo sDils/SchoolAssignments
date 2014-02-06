@@ -1,3 +1,4 @@
+package task4;
 
 /**
  * Class Account
@@ -147,8 +148,12 @@ public class Account {
 		double k = 999999999;
 		for(int i=0;i<100;i++)
 			k = k / 2;
-
+		
+		// By synchronizing this line of code we ensure the atomicity 
+		//of the account balance as well as free up the remaining blocks of code within the method
+		synchronized(this){
 			balance = balance + amount;
+		}
 
 		// Waste some time doing fake computations
 		// do not remove or modify any of the following 3 statements
@@ -169,8 +174,12 @@ public class Account {
 		double k = 999999999;
 		for(int i=0;i<100;i++)
 			k = k / 2;
-
+		
+		// By synchronizing this line of code we ensure the atomicity 
+		//of the account balance as well as free up the remaining blocks of code within the method
+		synchronized(this){
 			balance = balance - amount;
+		}
 
 		// Waste some time doing fake computations
 		// do not remove or modify any of the following 3 statements

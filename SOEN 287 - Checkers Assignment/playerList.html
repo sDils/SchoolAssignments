@@ -1,0 +1,195 @@
+<!-- 
+STEVEN Di Lullo 
+9597662
+SOEN 287 - Checkers Assignment 
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<title> Find Players </title>
+		<link rel="stylesheet" href="CSS/styles.css" />
+		<script type="text/javaScript" src="JS/JavaScript.js"></script>
+	</head>
+	
+	<body onload="renderTime()">
+			
+		<div id = "wrapper">
+		<header>
+		
+			<div style = "position:relative;">
+				<div id="name" style="position: absolute;">Checkers</div>
+				<img id="logo" class="left" border="0" src="images/logo.jpg" alt="King Me" height="230" width="200">
+				
+			</div>	 
+			
+		</header>
+	<div id="navBar">
+			
+			<nav>
+				<ul class="right">
+					<li><a href="underCon.html" title="Log In"> Log In</a></li>
+					<li><a href="index.html" title="Quick Game"> Play Now</a></li>
+					<li><a href="rules.html" title="Rules"> Rules</a></li>
+					
+					<li id ="clockDisplay"></li>
+				</ul>
+			</nav>
+		</div>
+		
+			<section id="mainScreen" class="right">
+			
+				<ul id="noob">
+					<li><h1>Beginners</h1></li>
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic4.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Shawn Field <br>   GP: 25  GW: 1</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic5.gif" alt="Profile Picture" height="100" width="100">
+					<p>Billy Towes  <br> GP: 5  GW: 0</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic4.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Shawn Field <br>   GP: 25  GW: 1</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic5.gif" alt="Profile Picture" height="100" width="100">
+					<p>Billy Towes  <br> GP: 5  GW: 0</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic4.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Shawn Field <br>   GP: 25  GW: 1</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic5.gif" alt="Profile Picture" height="100" width="100">
+					<p>Billy Towes  <br> GP: 5  GW: 0</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic4.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Shawn Field <br>   GP: 25  GW: 1</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img id="logo" class="left" border="0" src="images/profilepic5.gif" alt="Profile Picture" height="100" width="100">
+					<p>Billy Towes  <br> GP: 5  GW: 0</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+				
+				</ul>
+				
+				<ul id="inter">
+					
+					<li><h1>Intermediate</h1></li>
+					<li>
+					<img class="left" border="0" src="images/profilepic7.jpeg" alt="Profile Picture" height="100" width="100">
+					<p>Scooter Jones <br>  GP: 150  GW: 65</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img class="left" border="0" src="images/profilepic6.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Alex Lafleur  <br> GP: 100  GW: 22</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>		
+					
+									
+					<li>
+					<img class="left" border="0" src="images/profilepic7.jpeg" alt="Profile Picture" height="100" width="100">
+					<p>Scooter Jones <br>  GP: 150  GW: 65</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img class="left" border="0" src="images/profilepic6.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Alex Lafleur  <br> GP: 100  GW: 22</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+					
+					<li>
+					<img class="left" border="0" src="images/profilepic7.jpeg" alt="Profile Picture" height="100" width="100">
+					<p>Scooter Jones <br>  GP: 150  GW: 65</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img class="left" border="0" src="images/profilepic6.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Alex Lafleur  <br> GP: 100  GW: 22</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>
+				
+				
+				</ul>
+				
+		
+				
+				<ul id="master" >
+					
+					<li><h1>Masters</h1></li>
+					<li>
+					<img class="left" border="0" src="images/profilepic3.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Maxwell Huntington <br>  GP: 500  GW: 499</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					<p><br></p>
+					</li>
+					
+					<li>
+					<img class="left" border="0" src="images/profilepic2.jpg" alt="Profile Picture" height="100" width="100">
+					<p>Joshua Bingum  <br> GP: 340  GW: 340</p>
+					<button onclick="alert('Sorry! \n This Player Is Offline')">Challenge</button>
+					</li>		
+				
+				
+				</ul>
+			
+			</section>
+			
+			<section id="quickLinks" class="left">
+				<aside>
+					<dl>
+						<dt><a href="signUp.html" title="Create Profile"> Create an Account</a></dt>
+						<dt><a href="playerList.html" title="Profiles">Find Players</a></dt>
+						<dt><a href="index.html" title="Play Game">Play Game</a></dt>
+					</dl>
+				</aside>
+			</section>
+			
+			<footer>
+			<div id="footerBar" class="bottom">
+				<p><br>&copy; 2014, Up Scale Board Games Corp.</p>
+				
+				<ul>
+					<li><a href="#" title="About Us"> About Us</a></li>
+					<li><a href="#" title="Site Map"> Site Map</a></li>
+					<li><a href="#" title="Terms & Conditions"> Terms &amp; Conditions</a></li>
+					<li><a href="#" title="Careers"> Careers</a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+	
+	</body>
+</html>

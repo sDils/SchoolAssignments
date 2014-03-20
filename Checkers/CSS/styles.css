@@ -1,0 +1,531 @@
+ body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.header{
+	
+	position: fixed;
+	height:50px;
+	width:100%;
+	top: 0px;	
+	
+	background: #a30000;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+	background: #a30000;
+	background: -moz-linear-gradient(top, #a30000, #260000);
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#a30000), to(#260000));
+	
+	
+	border: 1px solid #002232;
+	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+	box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+
+nav{
+	padding: 5px 5px;
+}
+
+nav ul{
+	
+	width:958px;
+	padding-left: 325px;
+	
+	
+	
+}
+
+
+nav ul li{
+	float:left;
+	display:inline;
+	text-align:center;
+	
+	padding-right: 5px;
+	padding-left: 0px;
+	margin-left:3px;
+	margin-right:30px;
+	margin-top:-8px;
+	border: 5px inset transparent;
+	border-right: 5px inset #000;
+}
+
+nav ul li:hover {
+	
+	border-right: 5px inset #fff;
+
+}
+
+
+nav ul li a{
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16pt; 
+	color: #eeee8d;
+	display:block;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;	
+	
+	
+}
+
+#clockDisplay{
+	position: absolute;
+	
+	left:100px;
+	top:28px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16pt; 
+	color: #eeee8d;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+	
+	border: none;	
+}
+
+.quickLinks{
+	pasition: absolute;
+	background: green;
+	
+	height:500px;
+	width:220px;
+	margin-left: 100px;
+	margin-top:70px;
+	margin-bottom: 0px;
+	
+	
+	
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #eeeeee;	
+	
+
+	-moz-border-radius: 10px 10px;
+	-webkit-border-radius: 10px 10px;
+	border-radius: 10px 10px;
+
+	background: #a30000;
+	background: -moz-linear-gradient(top, #a30000, #260000);
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#a30000), to(#260000));
+	
+
+	
+	border: 1px solid #002232;
+	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+	box-shadow:inset 0px 0px 1px #edf9ff;
+	
+}
+
+.quicklinks dl {
+	
+	margin-left: -50px;
+}
+
+.quickLinks dl dt{
+	width:175px;
+	padding: 4px 10px 4px 10px;
+	margin-bottom: 20px;
+	margin-top:0px;
+	
+	border: 5px inset transparent;
+	border-right: 5px inset #000;
+}
+
+
+.quickLinks dl dt a{
+	color:#eeee8d;
+	font-size: 16pt;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+		
+	
+}
+
+.quickLinks dl dt:hover{
+	border-right: 5px inset #fff;
+
+
+}
+
+#startButton:hover{
+	
+	color: #a30000;
+	background:#fff;
+}
+
+
+
+#gameBoard{
+	
+	
+	margin-left:150px;
+	margin-top:50px;
+}
+
+#startButton{
+	
+	
+	margin-left: 330px;
+	margin-top: 60px;
+	
+	width:100px;
+	position:relative;
+	left:103px;
+	bottom:20px;
+	background:#a30000;
+	color:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	height:30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1p solid #999;
+	
+	-webkit-box-shadow: 0px 0px 10px #161616;
+	-moz-box-shadow: 0px 0px 10px #161616;
+	box-shadow: 0px 0px 10px #161616;
+}
+
+.content{
+	
+	margin-top:-500px;
+	margin-left:340px;
+	width: 960px;
+	background: #e8e8e8;
+	height:2000px;
+	
+	-moz-border-radius: 10px 10px;
+	-webkit-border-radius: 10px 10px;
+	border-radius: 10px 10px;
+	
+}
+
+.Rules{
+	font-family:Arial, Helvetica, sans-serif;
+	
+	padding: 10px 30px 10px 30px;
+}
+
+.Rules ul li{
+	margin-bottom: 5px;
+}
+
+
+form {
+	
+	
+	background: #a30000;
+	opacity:1;
+	margin:auto;
+	top: 50px;
+	
+	position:relative;
+	
+	width:550px;
+	height:350px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	
+	text-decoration: none;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding:25px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	
+	-webkit-box-shadow: 0px 0px 5px #161616;
+	-moz-box-shadow: 0px 0px 5px #161616;
+	box-shadow: 0px 0px 5px #161616;
+		
+}
+
+form h1{
+	margin-top:0px
+}
+
+
+form input    {
+	
+	margin-left: 100px;
+	margin-bottom: 5px;
+	margin-top: 3px;
+	width:425px;
+	display:block;
+	border: none;
+	outline:none;
+	height: 25px;
+	-webkit-box-shadow: 3px 3px 5px #161616;
+	-moz-box-shadow: 3px 3px 5px #161616;
+	box-shadow: 3px 3px 5px #161616;
+	
+	font-size:12pt;
+	font-style:italic;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #e8e8e8;
+	
+	
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+form input:focus{
+	opacity: 1;
+	font-size:12pt;
+	font-style:italic;
+	border: none;
+	outline: none;
+	background: #eeee8d;
+	
+	
+	
+
+}
+
+
+
+form button{
+	opacity:1;
+	width:100px;
+	position:absolute;
+	right:50px;
+	bottom:20px;
+	background:#a30000;
+	color:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	height:30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1p solid #999;
+	
+	-webkit-box-shadow: 0px 0px 10px #161616;
+	-moz-box-shadow: 0px 0px 10px #161616;
+	box-shadow: 0px 0px 10px #161616;
+}
+
+form button:hover{
+	
+	color: #a30000;
+	background:#fff;
+}
+
+/* *******************PLAYER LIST************************************ */
+
+#noob,#master,#inter{
+	list-style-type: none;
+}
+#noob{
+	
+	margin-top: 30px;
+	margin-left:30px;
+	
+	width: 200px;
+	
+	
+	background: #a30000;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	
+	text-decoration: none;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-right: 15px;
+	
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	
+	-webkit-box-shadow: 0px 0px 5px #161616;
+	-moz-box-shadow: 0px 0px 5px #161616;
+	box-shadow: 0px 0px 5px #161616;
+	
+	
+}
+
+#inter{
+	margin-left: 370px;
+	margin-top:-1795px;
+	
+	width: 200px;
+	
+	
+	background: #a30000;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	
+	text-decoration: none;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-right: 15px;
+	
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	
+	-webkit-box-shadow: 0px 0px 5px #161616;
+	-moz-box-shadow: 0px 0px 5px #161616;
+	box-shadow: 0px 0px 5px #161616;
+	
+}
+
+#master{
+	
+	margin-left:670px;
+	margin-top:-1371px;
+	
+	width: 200px;
+	
+	
+	background: #a30000;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	
+	text-decoration: none;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-right: 15px;
+	
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	
+	-webkit-box-shadow: 0px 0px 5px #161616;
+	-moz-box-shadow: 0px 0px 5px #161616;
+	box-shadow: 0px 0px 5px #161616;
+	
+	
+}
+
+/* ***********************END OF PLAYER LIST **************************** */
+
+#constWarning{
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+
+	margin: 50px 180px;
+	
+	-webkit-box-shadow: 10px 0px 10px #161616;
+	-moz-box-shadow: 10px 0px 10px #161616;
+	box-shadow: 10px 0px 10px #161616;
+	
+}
+
+.footer{
+	height:80px;
+	width:960px;
+	margin-left: 340px;
+	padding-top: 0px;
+	
+	background: #a30000;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+	background: #a30000;
+	background: -moz-linear-gradient(top, #a30000, #260000);
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#a30000), to(#260000));
+	
+	
+	border: 1px solid #002232;
+	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+	box-shadow:inset 0px 0px 1px #edf9ff;
+		
+}
+
+.footer p{
+	text-align: center;
+	margin-top:-10px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #eeee8d;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+	
+}
+
+.footer ul{
+	position: relative;
+	text-align: center;
+	left:-15px; 
+	margin-top: 0px;
+}
+
+.footer ul li{
+	display:inline;
+	padding-left:10px;
+}
+
+.footer ul li a{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	color: #eeee8d;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.footer ul li a:hover{
+	text-decoration: underline;
+}
+

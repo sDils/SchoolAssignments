@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Create Account</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	
+	<body>
+	
+		<div id = "wrapper">
+				<header>
+				
+					<div style = "position:relative;">
+						<div id="name" style="position: absolute;">Checkers</div>
+						<img id="logo" class="left" border="0" src="images/logo.jpg" alt="King Me" height="230" width="200">
+						
+					</div>	 
+					
+				</header>
+				
+				<div id="navBar">
+					
+					<nav>
+						<ul class="right">
+							<li><a href="underCon.html" title="Log In"> Log In</a></li>
+							<li><a href="index.html" title="Quick Game"> Play Now</a></li>
+							<li><a href="rules.html" title="Rules"> Rules</a></li>
+							
+							<li id ="clockDisplay" ></li>
+						</ul>
+						
+					</nav>
+					
+					
+				</div>
+				
+				<section id="mainScreen" class="right">
+					<h1>Create You Account</h1>
+					
+					<p> Please fill out the following fields in order to register your account with King Me! Checkers<br></p>
+					
+					<form name="registration" action="checker_site.asp" method="post">
+					
+						<h1>Registration Form</h1>
+						 
+						<input type="text" name="firstname" value="First Name"  onblur="if(this.value == '') { this.value='First Name'}" 
+						                                                           onfocus="if (this.value == 'First Name') {this.value=''}" >
+						
+						 
+						<input type="text" name="lastname" value="Last Name"  onblur="if(this.value == '') { this.value='Last Name'}" 
+						                                                      onfocus="if (this.value == 'Last Name') {this.value=''}"><br>
+					
+						 
+						<input type="text" name="phonenumber" value="Phone Number (eg. xxx-xxx-xxxx)" onblur="if(this.value == '') { this.value='Phone Number (eg. xxx-xxx-xxxx)'}" 
+						                                                           onfocus="if (this.value == 'Phone Number (eg. xxx-xxx-xxxx)') {this.value=''}">
+						
+						 
+						<input type="text" name="email" value="Email"  onblur="if(this.value == '') { this.value='Email'}" 
+						                                                           onfocus="if (this.value == 'Email') {this.value=''}"><br>
+						
+						 
+						<input type="text" name="password" value="Password"  onblur="if(this.value == '') { this.value='Password';} else { this.type='password'}" 
+						                                                           onfocus="if (this.value == 'Password') {this.value=''; this.type=password}">
+						
+						 
+						<input type="text" name="confpassword" value= "Confirm Password" onblur="if(this.value == '') { this.value='Confirm Password';} else { this.type='password'}" 
+						                                                                   onfocus="if (this.value == 'Confirm Password') {this.value=''; this.type=password}"><br><br>
+						
+						
+						<button id="submit" type="button" onclick="validateForm()" >Submit</button>
+					</form>
+					
+				
+				</section>
+				
+				<script type="text/javascript">
+				
+				
+					function validateForm(){
+						var input=document.forms["registration"]["firstname"].value;
+						if (input==null || input=="First Name"){
+							document.forms["registration"]["firstname"].style.background="#eeee8d";
+							alert("Please Provide Your First Name Before Submitting");
+							document.forms["registration"]["firstname"].style.background="white"
+							return false;
+						}
+						
+						input=document.forms["registration"]["lastname"].value;
+						if (input==null || input=="Last Name"){
+							document.forms["registration"]["lastname"].style.background="#eeee8d";
+							alert("Please Provide Your Family Name Before Submitting");
+							document.forms["registration"]["lastname"].style.background="white";
+							
+							return false;
+						}
+						
+						
+						input=document.forms["registration"]["phonenumber"].value;
+						var pattern= new RegExp("^(\([0-9]{3}\) |[0-9]{3}\-)[0-9]{3}-[0-9]{4}");
+						var isValid= pattern.test(input);
+						
+						if (!isValid || input==null || input==""){
+							document.forms["registration"]["phonenumber"].style.background="#eeee8d";
+							alert("Please Provide A Valid Phone Number Before Submitting");
+							document.forms["registration"]["phonenumber"].style.background="white";
+							
+							return false;
+						}
+						
+						
+						input=document.forms["registration"]["email"].value;
+						var pattern= new RegExp("[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}");
+						var isValid= pattern.test(input);
+						
+						if (!isValid || input==null || input==""){
+							document.forms["registration"]["email"].style.background="#eeee8d";
+							alert("Please Provide A Valid Email Before Submitting");
+							document.forms["registration"]["email"].style.background="white";
+							
+							return false;
+						}
+						
+						
+						input=document.forms["registration"]["password"].value;
+						if (input==null || input=="Password"){
+							document.forms["registration"]["password"].style.background="#eeee8d";
+							alert("Please Provide A Password Before Submitting");
+							document.forms["registration"]["password"].style.background="white";
+							
+							return false;
+						}
+						
+						input=document.forms["registration"]["confpassword"].value;
+						input2=document.forms["registration"]["password"].value;
+						
+						if (input==null || input=="Confirm Password" || !(input==input2)){
+							document.forms["registration"]["confpassword"].style.background="#eeee8d";
+							alert("Your Password Has To Be Properly Confirmed Before Submitting");
+							document.forms["registration"]["confpassword"].style.background="white";
+							
+							return false;
+					
+						}
+						
+						alert("Your Accont Has Been Created \n Thank You For Playing!")
+					}
+				
+				</script>
+				
+				
+				<section id="quickLinks" class="left">
+					<aside>
+						<dl>
+							<dt><a href="signUp.html" title="Create Profile"> Create an Account</a></dt>
+							<dt><a href="playerList.html" title="Profiles">Find Players</a></dt>
+							<dt><a href="index.html" title="Play Game">Play Game</a></dt>
+						</dl>
+					</aside>
+				</section>
+				
+				
+			<footer>
+				<div id="footerBar" class = "bottom">
+					<p><br>&copy; 2014, Up Scale Board Games Corp.</p>
+					
+					<ul>
+						<li><a href="#" title="About Us"> About Us</a></li>
+						<li><a href="#" title="Site Map"> Site Map</a></li>
+						<li><a href="#" title="Terms & Conditions"> Terms &amp; Conditions</a></li>
+						<li><a href="#" title="Careers"> Careers</a></li>
+					</ul>
+				</div>
+			</footer>
+			
+		</div>
+		
+		<script type="text/javascript">
+			function renderTime(){
+				var currentTime = new Date();
+				var diem = "AM"
+				var h = currentTime.getHours();
+				var m = currentTime.getMinutes();
+				var s = currentTime.getSeconds();
+				
+				if(h == 0){
+					h=12;
+				}
+				else if(h>12){
+					h=h-12;
+					diem="PM";
+				}
+				
+				
+				if(h<10){
+					h = "0"+ h;
+				}
+				
+				if(m<10){
+					m = "0"+m;
+				}
+				
+				if(s<10){
+					s = "0"+s;
+				}
+				
+				var myClock = document.getElementById("clockDisplay");
+				myClock.textContent = h+":"+m+":"+s+" "+diem;
+				
+				setTimeout('renderTime()', 1000);
+			}
+			
+		renderTime();
+		</script>
+	
+	</body>
+</html>

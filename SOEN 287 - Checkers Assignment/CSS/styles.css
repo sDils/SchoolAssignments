@@ -36,6 +36,8 @@ footer,header,hgroup,menu,nav,section {
 }
 
 #logo{
+	
+	
 	-moz-border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
@@ -69,6 +71,8 @@ footer,header,hgroup,menu,nav,section {
 	border: none;
 	margin-left: 200px;
 }
+
+
 
 nav ul{
 	background: #a30000;
@@ -358,7 +362,8 @@ form input    {
 	margin-top: 3px;
 	width:350px;
 	display:block;
-	border: 1px solid #999;
+	border: none;
+	outline:none;
 	height: 25px;
 	-webkit-box-shadow: 3px 3px 5px #161616;
 	-moz-box-shadow: 3px 3px 5px #161616;
@@ -367,15 +372,41 @@ form input    {
 	font-size:12pt;
 	font-style:italic;
 	font-family:Arial, Helvetica, sans-serif;
-	opacity: 0.5;
+	background: #e8e8e8;
+	
+	
+}
 
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
 }
 
 form input:focus{
 	opacity: 1;
 	font-size:12pt;
-	font-style:normal;
+	font-style:italic;
+	border: none;
+	outline: none;
+	background: #c86666;
+	
+	
+	
+
 }
+
+
 
 form button{
 	opacity:1;
